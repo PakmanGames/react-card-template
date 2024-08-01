@@ -7,3 +7,13 @@ To run this project, fork the repo and clone it to your machine.
 `cd` into the project folder  
 Then run `npm install` to install node dependencies  
 Then `npm run dev` to run it locally
+
+I've included test data to help get a sense for what the webpage looks like in `Input.jsx`.  
+To get a blank slate comment out the line that declares `tasks` and `setTasks` and uncomment the line underneath it.
+
+Preview (with test data):  
+<img src="./public/react-card-template-preview.png" alt="Preview of Card Layout Page">
+
+Potential future additions:  
+- Create routes for the nav bar to bring you to
+- Draggable cards to rearrange

@@ -27,10 +27,12 @@
     background-color: lightgreen;
     box-shadow: 2px 2px 10px black;
     transition: background-color 0.2s ease;
+    transition: box-shadow 0.2s ease;
 }
 
 .add-button:hover {
     background-color: #79ca79;
+    box-shadow: 2px 2px 15px black;
 }
 
 .input-container div p {

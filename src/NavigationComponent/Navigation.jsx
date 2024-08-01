@@ -6,7 +6,7 @@ function Navigation() {
         <div className='nav'>
             <div className='nav-start'>
                 <img src={ReactLogo} alt="React Logo" />
-                <p>Title Example</p>
+                <p><a href="https://github.com/pakmangames" target='_blank'>Example Website Title</a></p>
             </div>
             <div className='nav-end'>
                 <a href="#">Home</a>
