@@ -5,3 +5,8 @@ html, body {
 body {
   margin: 0px;
 }
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+}
