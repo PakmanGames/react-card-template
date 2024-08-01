@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+.nav-start {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-end {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-end a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-end a:hover {
+    background-color: #cfeeee;
+}
