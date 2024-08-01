@@ -5,8 +5,6 @@ import './CardTasks.css'
 function CardTasks() {
     const itemList = useContext(ItemsList);
 
-    console.log(itemList);
-
     if (itemList.length === 0) {
         return;
     }

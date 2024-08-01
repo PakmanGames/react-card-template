@@ -14,6 +14,8 @@ To get a blank slate comment out the line that declares `tasks` and `setTasks` a
 Preview (with test data):  
 <img src="./public/react-card-template-preview.png" alt="Preview of Card Layout Page">
 
+Routes were made using the package `react-router-dom`
+
 Potential future additions:  
-- Create routes for the nav bar to bring you to
+- ~~Create routes for the nav bar to bring you to~~
 - Draggable cards to rearrange
