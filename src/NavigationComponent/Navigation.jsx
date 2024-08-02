@@ -3,6 +3,8 @@ import { Outlet, Link, useLocation } from 'react-router-dom'
 import ReactLogo from '../assets/react.svg'
 import './Navigation.css'
 
+import Chat from '../ChatComponent/Chat'
+
 function Navigation() {
     const location = useLocation();
     const childRouteActive = ['/home/', '/about/', '/contact/'].some((route) => route === location.pathname);
@@ -20,7 +22,7 @@ function Navigation() {
                     <Link to={'contact/'}>Contact</Link>
                 </div>
             </div>
-            {childRouteActive ? <Outlet /> : <div>hello world (card layout on home)</div>}
+            {childRouteActive ? <Outlet /> : <Chat />}
         </div>
     );
 }
