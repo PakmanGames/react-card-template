@@ -25,20 +25,24 @@ function Input() {
 
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('./test.json').then((response) => {
+        fetch('/test.json').then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
             return response.json();
         }).then((info) => {
-            setData(info);
+            setData(info.data);
         }).catch((error) => {
             console.error('Error fetching JSON data:', error);
         });
     }, []);
 
-    const [tasks, setTasks] = useState(data.data);
+    const [tasks, setTasks] = useState(data);
     // const [tasks, setTasks] = useState([]);
+
+    useEffect(() => {
+        setTasks(data);
+    }, [data])
 
     const handleTitleChange = (e) => {
         setTitle(e.target.value);
