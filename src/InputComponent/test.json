@@ -1,0 +1,14 @@
+{
+    "data": [
+    {"title": "Black", "description": "A neutral colour", "color": "#000000"},
+    {"title": "Red", "description": "BRIGHT AS FIRE!", "color": "#d81313"},
+    {"title": "Calming", "description": "Relaxing colour", "color": "#80dfff"},
+    {"title": "Pink", "description": "It's pink", "color": "#f0c1c1"},
+    {"title": "Grass?", "description": "Never seen grass before maybe this is the colour?", "color": "#37d27a"},
+    {"title": "ugly red", "description": "I dont like this", "color": "#850000"},
+    {"title": "purple", "description": "im running out of ideas", "color": "#8b4dff"},
+    {"title": "Snow white", "description": "white as snow", "color": "#ffffff"},
+    {"title": "navy", "description": "blue", "color": "#001052"},
+    {"title": "brighter PINK!", "description": "aaaa", "color": "#d7609a"}
+]
+}

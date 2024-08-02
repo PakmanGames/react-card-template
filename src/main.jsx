@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
+// imports for creating routes
 import {
   createBrowserRouter,
   RouterProvider,

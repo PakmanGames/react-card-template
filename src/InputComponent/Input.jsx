@@ -1,6 +1,7 @@
-import { useState, createContext } from 'react';
+import { useState, createContext, useEffect } from 'react';
 import CardTasks from '../CardTasksComponent/CardTasks'
 import './Input.css'
+
 
 export const ItemsList = createContext()
 
@@ -22,7 +23,21 @@ function Input() {
         {title: "brighter PINK!", description: "aaaa", color: "#d7609a"}
     ]
 
-    const [tasks, setTasks] = useState(testData);
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch('./test.json').then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        }).then((info) => {
+            setData(info);
+        }).catch((error) => {
+            console.error('Error fetching JSON data:', error);
+        });
+    }, []);
+
+    const [tasks, setTasks] = useState(data.data);
     // const [tasks, setTasks] = useState([]);
 
     const handleTitleChange = (e) => {
